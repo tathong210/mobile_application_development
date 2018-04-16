@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thong.currencyconverter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Mode"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnusd_vnd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="USD/VND"/>
+            <Button
+                android:id="@+id/btneur_vnd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="EUR/VND"/>
+            <Button
+                android:id="@+id/btnusd_eur"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="USD/EUR"/>
+            <Button
+                android:id="@+id/btneur_usd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="EUR/USD"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearlayout"
+    android:visibility="invisible"
+    android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:gravity="right"
+                    android:text="USD" />
+                <EditText
+                    android:id="@+id/txtInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter US Dollars amount"
+                    android:inputType="numberDecimal" />
+                <requestFocus />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:gravity="right"
+                    android:text="VND" />
+                <EditText
+                    android:id="@+id/txtOutput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear" />
+            <Button
+                android:id="@+id/btnConvert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Convert" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
